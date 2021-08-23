@@ -16,6 +16,8 @@ import { View } from "react-native";
 import { Text } from "./src/components/typography/text.component";
 import { SafeArea } from "./src/components/utility/safe-area.component";
 
+import { restaurantsRequest } from "./src/services/restaurants/restaurants.service";
+restaurantsRequest;
 const Tab = createBottomTabNavigator();
 
 const TAB_ICON = {
