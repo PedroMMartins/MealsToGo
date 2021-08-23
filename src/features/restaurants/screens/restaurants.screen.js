@@ -8,10 +8,7 @@ import { SafeArea } from "../../../components/utility/safe-area.component";
 import { RestaurantsContext } from "../../../services/restaurants/restaurants.context";
 import { Spacer } from "../../../components/spacer/spacer.component";
 import { colors } from "../../../infrastructure/theme/colors";
-
-const SearchContainer = styled.View`
-  padding: ${(props) => props.theme.space[3]};
-`;
+import { Search } from "../components/search.component";
 
 const RestaurantList = styled(FlatList).attrs({
   contentContainerStyle: {
@@ -35,15 +32,7 @@ export const RestaurantsScreen = () => {
   const { restaurants, isLoading, error } = useContext(RestaurantsContext);
   return (
     <SafeArea>
-      <SearchContainer>
-        <Searchbar
-        //   placeholder="Search"
-        //   icon="heart-outline"
-        //   onChangeText={onChangeSearch}
-        //   value={searchQuery}
-        />
-      </SearchContainer>
-
+      <Search />
       {isLoading && (
         <LoadingContainer>
           <Loading
