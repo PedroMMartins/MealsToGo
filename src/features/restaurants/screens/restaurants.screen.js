@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { ActivityIndicator, Searchbar } from "react-native-paper";
+import { ActivityIndicator } from "react-native-paper";
 import { FlatList } from "react-native";
 
 import { RestaurantInfoCard } from "../components/restaurant-info-card.component";
