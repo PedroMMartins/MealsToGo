@@ -7,7 +7,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { RestaurantsNavigator } from "./restaurants.navigator";
 
 const TAB_ICON = {
-  RestaurantsNavigatorContainer: "restaurant",
+  Restaurants: "restaurant",
   Map: "map",
   Settings: "settings",
 };
@@ -40,11 +40,7 @@ export const AppNavigator = () => {
   return (
     <NavigationContainer>
       <Tab.Navigator screenOptions={createScreenOptions}>
-        <Tab.Screen
-          name="RestaurantsNavigatorContainer"
-          options={{ title: "Restaurants" }}
-          component={RestaurantsNavigator}
-        />
+        <Tab.Screen name="Restaurants" component={RestaurantsNavigator} />
         <Tab.Screen name="Map" component={Map} />
         <Tab.Screen name="Settings" component={Settings} />
       </Tab.Navigator>
