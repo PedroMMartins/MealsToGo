@@ -4,7 +4,6 @@ import styled from "styled-components/native";
 import { Spacer } from "../../../components/spacer/spacer.component";
 import { Text } from "../../../components/typography/text.component";
 import { SafeArea } from "../../../components/utility/safe-area.component";
-import { Navigation } from "../../../infrastructure/navigation";
 import { AuthenticationContext } from "../../../services/authentication/authentication.context";
 
 const SettingsItem = styled(List.Item)`
