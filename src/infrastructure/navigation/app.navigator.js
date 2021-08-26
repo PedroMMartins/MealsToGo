@@ -8,7 +8,6 @@ import { RestaurantsContextProvider } from "../../services/restaurants/restauran
 
 import { RestaurantsNavigator } from "./restaurants.navigator";
 import { MapScreen } from "../../features/map/screens/map.screen";
-import { SettingsScreen } from "../../features/settings/screens/settings.screen";
 import { SettingsNavigator } from "./settings.navigator";
 
 const TAB_ICON = {

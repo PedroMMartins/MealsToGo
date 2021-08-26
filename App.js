@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { StatusBar as ExpoStatusBar } from "expo-status-bar";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./src/infrastructure/theme";
@@ -19,7 +19,6 @@ const firebaseConfig = {
   messagingSenderId: "660665601322",
   appId: "1:660665601322:web:186fd60ddd3a79f0c22253",
 };
-import { useEffect } from "react/cjs/react.development";
 import { AuthenticationContextProvider } from "./src/services/authentication/authentication.context";
 
 if (!firebase.apps.length) {

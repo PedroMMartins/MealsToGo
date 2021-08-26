@@ -26,7 +26,7 @@ const LoadingContainer = styled.View`
 
 export const RestaurantsScreen = ({ navigation }) => {
   const [isToggled, setIsToggled] = useState(false);
-  const { restaurants, isLoading, error } = useContext(RestaurantsContext);
+  const { restaurants, isLoading } = useContext(RestaurantsContext);
   const { favourites } = useContext(FavouritesContext);
 
   return (
@@ -69,7 +69,6 @@ export const RestaurantsScreen = ({ navigation }) => {
           );
         }}
         keyExtractor={(item) => item.name}
-        contentContainerStyle={{ padding: 32 }}
       />
     </SafeArea>
   );

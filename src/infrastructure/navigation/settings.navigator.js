@@ -1,6 +1,4 @@
 import React from "react";
-import { Text } from "../../components/typography/text.component";
-import { View } from "react-native";
 import {
   createStackNavigator,
   CardStyleInterpolators,

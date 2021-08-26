@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { FlatList, TouchableOpacity } from "react-native";
+import { TouchableOpacity } from "react-native";
 import styled from "styled-components/native";
 import { Spacer } from "../../../components/spacer/spacer.component";
 import { Text } from "../../../components/typography/text.component";
@@ -36,7 +36,6 @@ export const FavouritesScreen = ({ navigation }) => {
           );
         }}
         keyExtractor={(item) => item.name}
-        contentContainerStyle={{ padding: 32 }}
       />
     </SafeArea>
   ) : (
