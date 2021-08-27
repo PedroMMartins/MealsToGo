@@ -11,9 +11,9 @@ import { MapScreen } from "../../features/map/screens/map.screen";
 import { SettingsNavigator } from "./settings.navigator";
 
 const TAB_ICON = {
-  Restaurants: "restaurant",
-  Map: "map",
-  Settings: "settings",
+  Restaurants: "md-restaurant",
+  Map: "md-map",
+  Settings: "md-settings",
 };
 
 const Tab = createBottomTabNavigator();
@@ -43,7 +43,14 @@ export const AppNavigator = () => {
                 headerShown: false,
               }}
             />
-            <Tab.Screen name="Settings" component={SettingsNavigator} />
+            <Tab.Screen
+              name="Settings"
+              component={SettingsNavigator}
+              // options={{
+              //   headerShown: false,
+              //   tabBarLabel: "Settings",
+              // }}
+            />
           </Tab.Navigator>
         </RestaurantsContextProvider>
       </LocationContextProvider>

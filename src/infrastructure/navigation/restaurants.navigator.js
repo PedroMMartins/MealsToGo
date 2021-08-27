@@ -1,19 +1,24 @@
 import React from "react";
 
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import {
+  createStackNavigator,
+  CardStyleInterpolators,
+} from "@react-navigation/stack";
 import { TransitionPresets } from "@react-navigation/stack";
 
 import { RestaurantsScreen } from "../../features/restaurants/screens/restaurants.screen";
 import { RestaurantDetailScreen } from "../../features/restaurants/screens/restaurant-detail.screen";
 
-const RestaurantStack = createNativeStackNavigator();
+const RestaurantStack = createStackNavigator();
 
 export const RestaurantsNavigator = () => {
   return (
     <RestaurantStack.Navigator
+      headerMode="none"
       screenOptions={{
-        headerShown: false,
+        //headerShown: false,
         ...TransitionPresets.ModalPresentationIOS,
+        //cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
       }}
     >
       <RestaurantStack.Screen
