@@ -1,9 +1,6 @@
 import React from "react";
 
-import {
-  createStackNavigator,
-  CardStyleInterpolators,
-} from "@react-navigation/stack";
+import { createStackNavigator } from "@react-navigation/stack";
 import { TransitionPresets } from "@react-navigation/stack";
 
 import { RestaurantsScreen } from "../../features/restaurants/screens/restaurants.screen";
@@ -17,7 +14,7 @@ export const RestaurantsNavigator = () => {
       headerMode="none"
       screenOptions={{
         //headerShown: false,
-        ...TransitionPresets.ModalPresentationIOS,
+        ...TransitionPresets.ModalFadeTransition,
         //cardStyleInterpolator: CardStyleInterpolators.forHorizontalIOS,
       }}
     >
