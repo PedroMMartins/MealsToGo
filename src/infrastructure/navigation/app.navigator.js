@@ -9,6 +9,7 @@ import { RestaurantsContextProvider } from "../../services/restaurants/restauran
 import { RestaurantsNavigator } from "./restaurants.navigator";
 import { MapScreen } from "../../features/map/screens/map.screen";
 import { SettingsNavigator } from "./settings.navigator";
+import { colors } from "../../infrastructure/theme/colors";
 
 const TAB_ICON = {
   Restaurants: "md-restaurant",
@@ -24,8 +25,8 @@ const createScreenOptions = ({ route }) => {
     tabBarIcon: ({ size, color }) => (
       <Ionicons name={iconName} size={size} color={color} />
     ),
-    tabBarActiveTintColor: "tomato",
-    tabBarInactiveTintColor: "gray",
+    tabBarActiveTintColor: colors.brand.primary,
+    tabBarInactiveTintColor: colors.brand.muted,
   };
 };
 
